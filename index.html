@@ -1,0 +1,43 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>Математический Калькулятор</h1>
+
+<div class="inputs">
+    <input id="a" type="number" placeholder="a"/>
+    <input id="b" type="number" placeholder="b"/>
+    <input id="c" type="number" placeholder="c"/>
+</div>
+
+
+<h2>Квадратное уравнение</h2>
+<div class="button-row">
+    <button onclick="calculateQuadratic()">Решить ax² + bx + c = 0</button>
+</div>
+<div id="quadraticResult" class="output"></div>
+<div id="directionResult" class="output"></div>
+
+
+<h2>Другие функции</h2>
+<div class="button-row">
+    <button onclick="calculateF1()">8a - b² / 9</button>
+    <button onclick="calculateF2()">5a + b² / 64</button>
+    <button onclick="calculateF3()">4(b + a) - a²</button>
+    <button onclick="calculateF4()">4(a² / 4 - b)</button>
+</div>
+<div id="functionResult" class="output"></div>
+
+
+<h2>Тест</h2>
+<button onclick="runTest()">Показать тест</button>
+<div id="testResult" class="output"></div>
+<script src="./task.js"></script>
+</body>
+</html>
